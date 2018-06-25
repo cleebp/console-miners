@@ -17,6 +17,6 @@ class Gameboard(object):
 
     @staticmethod
     def print_board(self):
-        print(BOARD_TOP)
+        print(BOARD_TOP[0])
         for i in range(10):
             print(BOARD_LEVELS[0])

@@ -20,3 +20,4 @@ $RECYCLE.BIN/
 ############
 .idea/
 venv/
+*.pyc

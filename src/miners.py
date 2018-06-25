@@ -11,11 +11,11 @@ from src import gameboard
 
 
 def loop(board):
-    board.print_board()
+    board.print_board(board)
 
 
 def run():
-    board = gameboard()
+    board = gameboard.Gameboard()
     loop(board)
 
 
