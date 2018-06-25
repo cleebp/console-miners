@@ -13,10 +13,15 @@ class Gameboard(object):
     """Contains all properties needed to draw the game board.
     """
 
-    # def __init__(self):
+    current_board = []
+
+    def __init__(self):
+        self.current_board = [BOARD_TOP[0]]
+        for i in range(10):
+            self.current_board.append(BOARD_LEVELS[0])
+
 
     @staticmethod
     def print_board(self):
-        print(BOARD_TOP[0])
-        for i in range(10):
-            print(BOARD_LEVELS[0])
+        for i in range(len(self.current_board)):
+            print(self.current_board[i])

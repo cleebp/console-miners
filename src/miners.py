@@ -3,22 +3,18 @@
 # package imports
 
 # local imports
-from src import gameboard
+from src.gameboard import Gameboard
 
 # notes:
-# log file for each run, log method that easily lets you log a print statement
-# board ascii pieces file(s)
+# - log file for each run, log method that easily lets you log a print statement
+#   board ascii pieces file(s)
+# - loop needs to run x times per second on a while loop checking for game end conditions
 
 
 def loop(board):
-    board.print_board(board)
+    Gameboard.print_board(board)
 
 
 def run():
-    board = gameboard.Gameboard()
+    board = Gameboard()
     loop(board)
-
-
-if __name__ == "__main__":
-    run()
-    print("Miners main just got called?")
