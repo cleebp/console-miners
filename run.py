@@ -1,4 +1,5 @@
-from src import miners
+from src import main
+import platform
 
 if __name__ == "__main__":
-    miners.run()
+    main.run(platform.system())
