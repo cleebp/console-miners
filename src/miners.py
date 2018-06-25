@@ -3,17 +3,22 @@
 # package imports
 
 # local imports
-import gameboard
+from src import gameboard
 
 # notes:
 # log file for each run, log method that easily lets you log a print statement
 # board ascii pieces file(s)
 
 
-def loop():
+def loop(board):
     board.print_board()
 
 
-if __name__ == "__main__":
+def run():
     board = gameboard()
-    print(board)
+    loop(board)
+
+
+if __name__ == "__main__":
+    run()
+    print("Miners main just got called?")

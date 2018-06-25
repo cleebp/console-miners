@@ -1,7 +1,7 @@
-#from src import miners
-import os
+from src import miners
+import sys
 
 if __name__ == "__main__":
-	#app = miners()
-	#app.run()
-	os.system("src/miners.py")
+	sys.path.append(str(sys.path[0] + "/src/"))
+	print(sys.path)
+	miners.run()
