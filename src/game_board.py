@@ -35,6 +35,7 @@ class Gameboard(object):
     def print_top_bar(self):
         to_print = str(TOP_BAR[0]) + str(self.state.total_gold) + '\t' + \
                    str(TOP_BAR[1]) + str(self.state.gps) + '\t' + \
+                   'Platform: ' + str(self.platform) + '\t' + \
                    str(TOP_BAR[2]) + str(self.state.iteration)
         print(to_print)
 
